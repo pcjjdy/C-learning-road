@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="1.HelloWorld.cs" />
     <Compile Include="2.Rectangle.cs" />
+    <Compile Include="3.Transform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
