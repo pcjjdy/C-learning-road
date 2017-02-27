@@ -34,7 +34,7 @@ namespace C_sharp_Learning
             Rectangle r = new Rectangle();
             r.Acceptdetails();
             r.Display();
-            Console.ReadLine();
+         //   Console.ReadLine();
         }
     }
 }

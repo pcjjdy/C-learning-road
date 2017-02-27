@@ -8,25 +8,27 @@ namespace C_sharp_Learning
 {
     class Transform
     {
-        Type Unknown;
+        double Unknown =10.5;
+        int i=10;
 
-
-        void GetTransformResult(int whichType)
+        public void GetTransformResult(int whichType)
         {
           
             switch (whichType) { 
                 case 1:  //强制转换
+                    Unknown = (int)Unknown;
                     break;
-                case 2:     
+                case 2:
+                    Unknown = i;
                     break;
                 default:    //隐式转换
                     break;
-            }
-               
+            }               
 
         }
-
-        
+        public void  Get() {
+            Console.WriteLine(Unknown);
+        }
 
     }
 }
@@ -46,3 +48,4 @@ namespace C_sharp_Learning
 //ToType()
 //ToUInt16/32/64() 无符号整数类型
 
+//类成员函数默认私有 公有的话需要public

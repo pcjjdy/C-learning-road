@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace C_sharp_Learning
+{
+       
+    class LoopJudgment
+    {
+        public char grade;
+        public void LoopSwitch() {
+            switch (grade)
+            {
+                case 'A':
+                    Console.WriteLine("很棒！");
+                    break;
+                case 'B':
+                case 'C':
+                    Console.WriteLine("做得好");
+                    break;
+                case 'D':
+                    Console.WriteLine("您通过了");
+                    break;
+                case 'F':
+                    Console.WriteLine("最好再试一下");
+                    break;
+                default:
+                    Console.WriteLine("无效的成绩");
+                    break;
+            }
+            Console.WriteLine("您的成绩是 {0}", grade);
+        }
+
+    }
+}
+
+//switch 语句中的 expression 必须是一个整型或枚举类型，
+//或者是一个 class 类型，其中 class 有一个单一的转换函数将其转换为整型或枚举类型。
+//不是每一个 case 都需要包含 break。如果 case 语句为空，则可以不包含 break，控制流将会 继续 后续的 case，直到遇到 break 为止。
+//一个 switch 语句可以有一个可选的 default case。default case 中的 break 语句不是必需的。

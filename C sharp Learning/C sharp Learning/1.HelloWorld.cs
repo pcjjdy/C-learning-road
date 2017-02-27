@@ -21,10 +21,26 @@ namespace C_sharp_Learning
             ExecuteRectangle rea = new ExecuteRectangle();
             rea.ShowRectangle();
 
+            //3. Transform
+            Transform tra = new Transform();
+            tra.GetTransformResult(2);
+            tra.Get();
 
 
+            //4. Constant and Varibale
+            ConstantVariable cv = new ConstantVariable();
+            cv.GetVariable(false);    //是否输入
+            cv.GetConstant();
 
+            //5. Operators
+            Operator op = new Operator();
+            op.Operators();
+            Console.WriteLine(op.c);
 
+            //6. Loop and Judgment
+            LoopJudgment lj = new LoopJudgment();
+            lj.grade = 'D';
+            lj.LoopSwitch();
 
             Console.ReadKey();    //将按下的键打印出来
 
