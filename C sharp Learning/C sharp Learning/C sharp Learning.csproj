@@ -49,6 +49,8 @@
     <Compile Include="4.ConstantVariable.cs" />
     <Compile Include="5.Operator.cs" />
     <Compile Include="6.LoopJudgment.cs" />
+    <Compile Include="7.Package.cs" />
+    <Compile Include="8.Function.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

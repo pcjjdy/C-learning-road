@@ -40,7 +40,27 @@ namespace C_sharp_Learning
             //6. Loop and Judgment
             LoopJudgment lj = new LoopJudgment();
             lj.grade = 'D';
-            lj.LoopSwitch();
+            lj.Switch();
+            lj.WhileLoop();
+            lj.DoWhileLoop();
+            lj.ForLoop();
+            lj.NestLoop();  //找质数
+
+            //7. Package
+            GetRectangle r = new GetRectangle();
+            r.length = 4.5;
+            r.width = 3.5;
+            r.Display();
+
+            //8.Function
+            Function f = new Function();
+            f.fun2();
+            f.fun3();
+            f.fun4();
+            f.fun5();
+            recursive rr = new recursive();
+            rr.call_factorial();
+
 
             Console.ReadKey();    //将按下的键打印出来
 
