@@ -62,6 +62,12 @@ namespace C_sharp_Learning
             rr.call_factorial();
 
 
+            //9.Nullable
+            Nullable n = new Nullable(); 
+            n.NullableFunc();
+            n.NullableMerge();
+            
+
             Console.ReadKey();    //将按下的键打印出来
 
         }
