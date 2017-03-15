@@ -66,8 +66,15 @@ namespace C_sharp_Learning
             Nullable n = new Nullable(); 
             n.NullableFunc();
             n.NullableMerge();
-            
 
+
+            //10.Array
+            MyArray array1 = new MyArray();
+            array1.AssignArray();
+            array1.SpecialArray1();
+            array1.SpecialArray2();
+            array1.SpecialArray3();
+            array1.SpecialArray4();
             Console.ReadKey();    //将按下的键打印出来
 
         }
