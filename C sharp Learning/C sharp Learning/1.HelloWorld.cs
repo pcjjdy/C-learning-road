@@ -12,6 +12,7 @@ namespace C_sharp_Learning
         static void Main(string[] arr)    //string[] args是main函数的形式参数,可以用来获取命令行用户输入进去的参数。
                                             //可以去掉
         {
+            
             //第一个C#程序
             Console.WriteLine("HelloWorld");
             String str = @"woshitiancai";
@@ -75,8 +76,21 @@ namespace C_sharp_Learning
             array1.SpecialArray2();
             array1.SpecialArray3();
             array1.SpecialArray4();
-            Console.ReadKey();    //将按下的键打印出来
+           
 
+
+            //11.Array 转化值的格氏方法
+            DateTime waiting = new DateTime(2015, 3, 17, 17, 31, 1);
+            string chat = String.Format("Message sent {0:t} on {0:D}", waiting);
+
+            MyString mystr = new MyString();
+            mystr.StringFunc();
+            Console.Write("{0}",chat);
+
+
+
+
+            Console.ReadKey();    //将按下的键打印出来
         }
     }
 }
