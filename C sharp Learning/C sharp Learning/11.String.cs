@@ -49,13 +49,16 @@ namespace C_sharp_Learning
 
         //string的常见方法
 
-        //比较两个指定的 string 对象，并返回一个表示它们在排列顺序中相对位置的整数。该方法区分大小写。    
+        //比较两个指定的 string 对象，并返回一个表示它们在排列顺序中相对位置的整数。该方法区分大小写。 
+        static char[] Achar= { 'H', 'E' }; 
         const string a = "aaa";
+        const string Fakea = "aaab";
         const string aa = "a";
-        const string b = "bbbb";
+        const string Thisb = "bbbb";
+        const string Along = "BBBaaa";
         const string UpperA = "AAA";
         const string UpperB = "BBB";
-        int result = string.Compare(a,b);    //如果后面加的是2个变量，必须是静态的。
+        int result = string.Compare(a, Thisb);    //如果后面加的是2个变量，必须是静态的。
         //result 小于0，a<b。 为0，a=b。 大于0，a>b。
 
         //比较两个指定的 string 对象，并返回一个表示它们在排列顺序中相对位置的整数。但是，如果布尔参数为真时，该方法不区分大小写。
@@ -65,50 +68,52 @@ namespace C_sharp_Learning
         string result3 = string.Concat(a, UpperA);
 
         //连接三个 string 对象。
-        string result4 = string.Concat(a,b,UpperA);
+        string result4 = string.Concat(a,Thisb,UpperA);
 
 
         //连接四个 string 对象。
-        string result5 = string.Concat(a, b, UpperA, UpperB);
+        string result5 = string.Concat(a, Thisb, UpperA, UpperB);
 
         //返回一个表示指定 string 对象是否出现在字符串中的值。
-        bool isHas = a.Contains(b);
+        bool isHas = a.Contains(Thisb);
 
         //创建一个与指定字符串具有相同值的新的 String 对象。
-        string CopyA = string.Copy(a); 
+        string CopyA = string.Copy(a);
 
-        //从 string 对象的指定位置开始复制指定数量的字符到 Unicode 字符数组中的指定位置。  ?????
-        public void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int count) {; }
-        
+        //从 string 对象的指定位置开始复制指定数量的字符到 Unicode 字符数组中的指定位置。 
+        public void CopyFunc() {
+            Thisb.CopyTo(1, Achar, 1, 2);     //复制b的第二位（1）开始的长度（2）， 到Achar的第二位（1）  { 'H',‘b'，'b'，'E' }
+            Console.WriteLine(Achar);
+        }
+
         //判断 string 对象的结尾是否匹配指定的字符串。
-    	public bool EndsWith(string value) {return true; }
+        bool isEndTrue = Along.EndsWith(a);
 
         //判断当前的 string 对象是否与指定的 string 对象具有相同的值。
-    	public bool Equals(string value) { return true; }
+        bool isEqual = Fakea.Equals(a);
 
         //判断两个指定的 string 对象是否具有相同的值。        
-    	public static bool Equals(string a, string b) { return true; }
-       
+        bool ifEqual = bool.Equals(Fakea,a);
 
         //把指定字符串中一个或多个格式项替换为指定对象的字符串表示形式。
-        public static string Format(string format, Object arg0) { return format; }
+        string replaceformat = string.Format(a, Achar);
 
         //返回指定 Unicode 字符在当前字符串中第一次出现的索引，索引从 0 开始。        
-        int IndexNum = aa.IndexOf(a); 
+        int IndexNum = Thisb.IndexOf(Fakea);
 
         //返回指定字符串在该实例中第一次出现的索引，索引从 0 开始。        
-        public int IndexOf(string value) { return 1; }
+        int FirstIndex =aa.IndexOf(a);
 
-        //返回指定 Unicode 字符从该字符串中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。       
-        public int IndexOf(char value, int startIndex) { return startIndex; }
+        //返回指定 Unicode 字符从该字符串中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。       ??
+        //int FirstIndex2 = IndexOf(char value, int startIndex);
 
-        //返回指定字符串从该实例中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。        
+        //返回指定字符串从该实例中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。        ??
         public int IndexOf(string value, int startIndex) { return startIndex; }
 
-        //返回某一个指定的 Unicode 字符数组中任意字符在该实例中第一次出现的索引，索引从 0 开始。       
+        //返回某一个指定的 Unicode 字符数组中任意字符在该实例中第一次出现的索引，索引从 0 开始。       ??
         public int IndexOfAny(char[] anyOf) { return 0; }
 
-        //返回某一个指定的 Unicode 字符数组中任意字符从该实例中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。        
+        //返回某一个指定的 Unicode 字符数组中任意字符从该实例中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。  ??      
         public int IndexOfAny(char[] anyOf, int startIndex) { return 0; }
 
         //返回一个新的字符串，其中，指定的字符串被插入在当前 string 对象的指定索引位置。       
