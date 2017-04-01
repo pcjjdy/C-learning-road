@@ -46,6 +46,8 @@
     <Compile Include="1.HelloWorld.cs" />
     <Compile Include="10.Array.cs" />
     <Compile Include="11.String.cs" />
+    <Compile Include="12.Struct.cs" />
+    <Compile Include="13.ClasswithEnum.cs" />
     <Compile Include="2.Rectangle.cs" />
     <Compile Include="3.Transform.cs" />
     <Compile Include="4.ConstantVariable.cs" />

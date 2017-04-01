@@ -147,19 +147,19 @@ namespace C_sharp_Learning
         public string Replace(string oldValue, string newValue) { return "hello"; }
 
         //返回一个字符串数组，包含当前的 string 对象中的子字符串，子字符串是使用指定的 Unicode 字符数组中的元素进行分隔的。       
-        public string[] Split(params char[] separator) { return a[]; }
+      //  public string[] Split(params char[] separator) { return a[]; }
         //返回一个字符串数组，包含当前的 string 对象中的子字符串，子字符串是使用指定的 Unicode 字符数组中的元素进行分隔的。int 参数指定要返回的子字符串的最大数目。        
-        public string[] Split(char[] separator, int count) { return "hello"; }
+    //    public string[] Split(char[] separator, int count) { return "hello"; }
         //判断字符串实例的开头是否匹配指定的字符串。        
         public bool StartsWith(string value) { return true; }
         //返回一个带有当前 string 对象中所有字符的 Unicode 字符数组。       
-        public char[] ToCharArray()
+       // public char[] ToCharArray()
         //返回一个带有当前 string 对象中所有字符的 Unicode 字符数组，从指定的索引开始，直到指定的长度为止。        
-        public char[] ToCharArray(int startIndex, int length)
+       // public char[] ToCharArray(int startIndex, int length)
         //把字符串转换为小写并返回。        
-        public string ToLower() { return "hello"; }
+      //  public string ToLower() { return "hello"; }
         //把字符串转换为大写并返回。        
-        public string ToUpper() { return "hello"; }
+       // public string ToUpper() { return "hello"; }
         //移除当前 String 对象中的所有前导空白字符和后置空白字符。        
         public string Trim() { return "hello"; }
 

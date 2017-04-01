@@ -90,6 +90,15 @@ namespace C_sharp_Learning
 
 
 
+            //12.Struct
+             MyStruct abook = new MyStruct();
+            abook.testStructFunc();
+             // abook.
+
+
+            //13. Class
+            MyEnum enum1 = new MyEnum();
+            enum1.myTestFunc();
             Console.ReadKey();    //将按下的键打印出来
         }
     }
